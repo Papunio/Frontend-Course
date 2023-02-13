@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fBf5f5;
+    font-family: "Roboto", "Arial", serif;
+}
+
+.main_header {
+    flex: 1;
+    background-color: white;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main_header__header {
+    font-size: 2.5rem; /* Czy 3.5 czy co xd */
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.navigation__wrapper {
+    flex: 1;
+
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+
+.navigation__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+
+.navigation__link {
+    display: block; /* Czy inline-block? */
+    padding: 2rem;
+    text-decoration: none;
+    color: black;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem; /* tu też idk */
+}
+
+.navigation__link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content__main {
+    background-color: #ECECF7;
+    padding: 2rem;
+}
+
+.figure--right {
+    float: right;
+}
+
+.figure--left {
+    float: left;
+}
+
+.article__figure {
+    margin: 8px 20px;
+}
+
+.article {
+    clear: both;
+}
+
+.warning__wrapper {
+    display: flex; /* tutaj te dodatkowe */
+    align-items: center;
+    justify-content: center;
+}
+
+.warning {
+    width: 70%;
+    min-width: 500px;
+    border: solid #FAF9F8 3px;
+    border-radius: 20px;
+    background-color: #F4C5B7;
+    overflow: auto; /* TUTAJ TRZA WIEDZIEC CO I JAQ P */
+}
+
+.warning__paragraph {
+    margin-right: 2rem;
+}
+
+.warning__figure {
+    margin-top: 0;
+}
+
+.warning__header {
+    text-align: center;
+}
+
+.footer__wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-top: black solid 1px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 7rem;
+    font-size: 0.7rem; /* ! */
+    text-align: center;
+}
+
+
+.content__main h2 {
+    font-size: 1.8rem; /* ! */
+    text-align: center;
+}
+
+.content__main h3 {
+    font-size: 1.5rem; /* ! */
+}
+
+.figure__caption {
+    font-size: 0.8rem; /* ! */
+    text-align: center;
+}
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "first second forth"
+    "first third third";
+    gap: 1rem;
+}
+
+.gallery__image {
+    object-fit: cover; /* ladniej fituje */
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__first_item {
+    grid-area: first;
+}
+
+.gallery__second_item {
+    grid-area: second;
+}
+
+.gallery__third_item {
+    grid-area: third;
+}
+
+.gallery__forth_item {
+    grid-area: forth;
+}
