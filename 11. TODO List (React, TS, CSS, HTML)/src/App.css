@@ -1,0 +1,128 @@
+
+.todos__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#clear-all {
+  display: inline;
+  color: #e1dfdf;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-bottom: -1.5rem;
+}
+
+.item__actions button:hover, .todoform__submit:hover, #clear-all:hover {
+  opacity: 0.7;
+}
+
+.todoform {
+  display: flex;
+  justify-content: space-between;
+  background-color: #15151e;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+
+.todoform__input {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background-color: #15151e;
+  color: #e1dfdf;
+  font-size: 1.25rem;
+}
+
+.todoform__submit {
+  color: #e1dfdf;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todos {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.task__item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #15151e;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.list__item--text {
+  color: #e1dfdf;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.item__actions {
+  display: flex;
+  margin-right: -0.5rem;
+}
+
+.item__actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #e1dfdf;
+}
+
+.actions__check--done {
+  opacity: 0.5;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #22233b;
+  color: #e1dfdf;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todoform--big {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+
+.todos__header--smaller {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  display: inline-block;
+}
