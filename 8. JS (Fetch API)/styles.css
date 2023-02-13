@@ -1,0 +1,92 @@
+/*Strona nie musi być responsywna*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+main {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: flex;
+    height: 650px;
+    width: 1000px;
+}
+
+.pokemons {
+    text-align: center;
+    background-color: bisque;
+    height: 100%;
+    overflow: scroll;
+    width: 39%;
+}
+
+.pokemons__item {
+    font-size: 2rem;
+    display: block;
+    width: 250px;
+    border-radius: 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pokemons__item:hover {
+    border-radius: 24px;
+    border-style: dashed;
+}
+
+
+.detailedview {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallup.net/wp-content/uploads/2016/05/24/143432-nature-Pokemon.jpg");
+    background-size: 100% 100%;
+}
+
+.detailedview__pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 40%;
+    border-radius: 7px;
+    border: 3px solid black;
+}
+
+.pokemon__name {
+    font-size: 2rem;
+}
+
+.pokemon__sprite {
+    background-color: beige;
+    clip-path: circle();
+    width: auto;
+    height: auto;
+}
+
+.pokemon__type {
+    font-size: 1.5rem;
+}
+
+.pokemon__flavor {
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.alert {
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 5rem;
+    font-size: 2rem;
+    color: darkred;
+    background-color: peachpuff;
+    border: solid 2px black;
+    border-radius: 5px;
+}
