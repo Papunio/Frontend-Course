@@ -1,0 +1,131 @@
+html {
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+}
+
+body {
+    background-color: #f7e1df;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "name surname"
+    "email phone"
+    "reason reason"
+    "message message"
+    "message message"
+    "newsletter newsletter"
+    "submit submit";
+}
+
+@media (max-width: 450px) {
+    .form {
+        width: 75%;
+        height: 85%;
+        background-color: white;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+    "header"
+    "name"
+    "surname"
+    "email"
+    "phone"
+    "reason"
+    "message"
+    "newsletter"
+    "submit";
+    }
+}
+
+.form__header {
+    grid-area: header;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.form__box {
+
+}
+
+.form__label {
+    margin: 1vw;
+}
+
+.form__input {
+    width: 90%;
+    margin: 1vw;
+    font-size: 0.9rem;
+
+}
+
+.form--name {
+    grid-area: name;
+
+}
+
+.form--surname {
+    grid-area: surname;
+}
+
+.form--email {
+    grid-area: email;
+}
+
+.form--phone {
+    grid-area: phone;
+}
+
+.form--reason {
+    grid-area: reason;
+}
+
+.form--message {
+    grid-area: message;
+
+}
+
+.form--newsletter {
+    grid-area: newsletter;
+    text-align: center;
+}
+
+.form--submit {
+    grid-area: submit;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.form__button {
+    background-color: #ff748b;
+    width: 30%;
+    height: 90%;
+    font-size: 1rem;
+}
+
+.form__input:invalid {
+    border-color: red;
+}
+
+@media (pointer: coarse) {
+    .form__checkbox {
+        width: 25px;
+        height: 25px;
+        border-width: 2px;
+        border-color: red;
+    }
+}

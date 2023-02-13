@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <!--    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">-->
+    <title>Formularz TAF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="content">
+    <form class="form" method="post">
+        <h2 class="form__header">Contact us!</h2>
+
+        <div class="form__box form--name">
+            <label class="form__label" for="name">Name (required)</label>
+            <input class="form__input" id="name" name="name" required="required">
+        </div>
+
+        <div class="form__box form--surname">
+            <label class="form__label" for="surname">Surname</label>
+            <input class="form__input" id="surname" name="surname">
+        </div>
+
+        <div class="form__box form--email">
+            <label class="form__label" for="email">Email (required)</label>
+            <input class="form__input" id="email" name="email" required="required" pattern=".+@.+\..+">
+        </div>
+
+        <div class="form__box form--phone">
+            <label class="form__label" for="phone">Phone</label>
+            <input class="form__input" id="phone" name="phone" placeholder="123456789" pattern="[0-9]{9}">
+        </div>
+
+        <div class="form__box form--reason">
+            <label class="form__label" for="reason">Reason (required)</label>
+            <select class="form__input" id="reason" name="reason" required="required">
+                <option value="" selected hidden>-- Select an option --</option>
+                <option value="uno">Option 1</option>
+                <option value="dos">Option 2</option>
+                <option value="tres">Option 3</option>
+            </select>
+        </div>
+        <div class="form__box form--message">
+            <label class="form__label" for="message">Message (required)</label>
+            <textarea class="form__input" id="message" name="message" required="required"></textarea>
+        </div>
+        <div class="form__box form--newsletter">
+            <label for="subscribe">Subscribe to the newsletter</label>
+            <input class="form__checkbox" type="checkbox" name="subscribe" id="subscribe">
+        </div>
+        <div class="form__box form--submit">
+            <input class="form__button" type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>
